@@ -1,0 +1,23 @@
+{
+  "name": "ups-operational-intelligence-backend",
+  "version": "1.0.0",
+  "description": "Backend API for UPS Operational Intelligence - Feature 01: Volume Forecasting",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test/forecast.test.js && node test/workforce.test.js && node test/resource.test.js && node test/operations.test.js && node test/supabase.test.js && node test/whatIf.test.js",
+    "test:forecast": "node test/forecast.test.js",
+    "test:workforce": "node test/workforce.test.js",
+    "test:resource": "node test/resource.test.js",
+    "test:operations": "node test/operations.test.js",
+    "test:supabase": "node test/supabase.test.js",
+    "test:whatif": "node test/whatIf.test.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.112.4",
+    "cors": "^2.8.5",
+    "dotenv": "^17.4.2",
+    "express": "^4.19.2"
+  }
+}
